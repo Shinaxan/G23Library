@@ -16,7 +16,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features" ,
         glue = "com/cydeo/library/stepDiff",
         dryRun = false,
-        tags = "@LibraryCT"
+        tags = "@B26G23-72"
         //  publish = true -> other option
 
         //  mvn test -Dcucumber.filter.tags=@smoke -> other option

@@ -4,12 +4,15 @@ Feature: Login Functionality for Librarian and Students
 	@B26G23-72 @LibraryCT
 	Scenario Outline: As a librarian, I should be able to login to LibraryCT
 	AC#1
-
+# email and passwod are the kyes in the map in stepDeff
 		Given user is on the loginPage
 		Then verify that the title is "Login - Library"
-		When librarian enters valid "<email>" and "<Password>"
+		When librarian enters valid email and password
+			| username              | <email> |
+			|pass                   | <Password> |
 		And user click sign in button
 		Then verify that there are 3 models on the page
+
 		Examples:
 			| email              | Password |
 			| librarian1@library | qU9mrvur |
